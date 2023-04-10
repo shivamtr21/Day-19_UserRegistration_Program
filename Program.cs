@@ -8,11 +8,11 @@
 
             UserRegistrationPr cd = new UserRegistrationPr();
 
-            Console.WriteLine("Enter the first name :");
+            Console.WriteLine("Enter the Last name :");
 
-            string FName = Console.ReadLine();
+            string LName = Console.ReadLine();
 
-            Console.WriteLine(cd.ValidateFName(FName));
+            Console.WriteLine(cd.ValidateLName(LName));
         }
     }
 }
