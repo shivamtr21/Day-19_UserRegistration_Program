@@ -8,11 +8,19 @@
 
             UserRegistrationPr cd = new UserRegistrationPr();
 
-            Console.WriteLine("Enter the Last name :");
+            Console.WriteLine("Enter the First name :");
 
+            string FName = Console.ReadLine();
+
+            Console.WriteLine("Enter the Last Name : ");
             string LName = Console.ReadLine();
 
+            Console.WriteLine("Enter Your Email Id : ");
+            string MailId = Console.ReadLine();
+
+            Console.WriteLine(cd.ValidateFName(FName));
             Console.WriteLine(cd.ValidateLName(LName));
+            Console.WriteLine(cd.ValidateMailId(MailId));
         }
     }
 }
