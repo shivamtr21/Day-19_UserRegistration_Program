@@ -15,7 +15,7 @@ namespace UserRegistration
         public static string Email = "^[a-z0-9._+-]+@[a-z|0-9.-]+\\.[a-z.]{2,}$";
 
         public static string Phone = "^[1-9]{2} [0-9]{10}$";
-        public static string Password = "^(?=.*[A-Z])(?=.*[0-9]).{8,}$";
+        public static string Password = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,}$";
 
         public bool ValidateFName(string FName)
         {

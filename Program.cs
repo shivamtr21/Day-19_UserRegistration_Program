@@ -4,31 +4,42 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the user registration program");
+            //Console.WriteLine("Welcome to the user registration program");
 
             UserRegistrationPr cd = new UserRegistrationPr();
 
-            Console.WriteLine("Enter the First name :");
+            //Console.WriteLine("Enter the First name :");
 
-            string FName = Console.ReadLine();
+            //string FName = Console.ReadLine();
 
-            Console.WriteLine("Enter the Last Name : ");
-            string LName = Console.ReadLine();
+            //Console.WriteLine("Enter the Last Name : ");
+            //string LName = Console.ReadLine();
 
-            Console.WriteLine("Enter Your Email Id : ");
+            //Console.WriteLine("Enter Your Email Id : ");
+            //string MailId = Console.ReadLine();
+
+            //Console.WriteLine("Enter Mobile number : ");
+            //string Mobile = Console.ReadLine();
+
+            //Console.WriteLine("Enter your assword");
+            //string password = Console.ReadLine();
+
+            //Console.WriteLine(cd.ValidateFName(FName));
+            //Console.WriteLine(cd.ValidateLName(LName));
+            //Console.WriteLine(cd.ValidateMailId(MailId));
+            //Console.WriteLine(cd.ValidateMobile(Mobile));
+            //Console.WriteLine(cd.ValidatePassword(password));
+
+
+            Console.WriteLine("Enter your Email Id:");
             string MailId = Console.ReadLine();
 
-            Console.WriteLine("Enter Mobile number : ");
-            string Mobile = Console.ReadLine();
+            string[] emailSamples = { "abc@yahoo.com", "abc-100@yahoo.com", "abc.100@yahoo.com", "abc111@abc.com", "abc-100@abc.net", "abc.100@abc.com.au", "abc@1.com", "abc@gmail.com.com", "abc+100@gmail.com" };
 
-            Console.WriteLine("Enter your assword");
-            string password = Console.ReadLine();
-
-            Console.WriteLine(cd.ValidateFName(FName));
-            Console.WriteLine(cd.ValidateLName(LName));
-            Console.WriteLine(cd.ValidateMailId(MailId));
-            Console.WriteLine(cd.ValidateMobile(Mobile));
-            Console.WriteLine(cd.ValidatePassword(password));
+            foreach (string email in emailSamples)
+            {
+                Console.WriteLine("{0} : {1}", email, cd.ValidateMailId(MailId) ? "Valid" : "Invalid");
+            }
         }
     }
 }
